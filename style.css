@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e64398;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #b39bc8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #f0ebf4;
+}
+
+h2,h3 {
+  color: #94dfff;
+}
+
+#taskInput {
+  width: 70%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  margin-bottom: 10px;
+}
+
+#addTaskButton {
+  padding: 10px 15px;
+  background-color:#94dfff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addTaskButton:hover {
+  background-color: #b39bc8;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #aacbd4;
+}
+
+.task-btn {
+  flex: 1;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+}
+
+.delete-btn {
+  background-color:#f0ebf4;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding:9px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right:5px;
+}
+
+.delete-btn:hover {
+  background-color: #aa3333;
+}
+.checkmark-btn {
+  background-color: #ffffff;
+  color: #3cba54;
+  border: none;
+  padding: 9px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 150px;
+}
+
+.checkmark-btn:hover {
+  background-color: #449944;
+}
+
+.task-content[contenteditable="true"]:focus {
+  outline: none;
+  border: 1px solid #aacbd4; 
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+.empty-state p {
+  color: #999;
+}
